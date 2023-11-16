@@ -59,7 +59,7 @@ export default {
     },
     async fetchFlights() {
       try {
-        const response = await this.$axios.get('http://fids.kefairport.is/api/flights', {
+        const response = await this.$axios.get('https://fidsproxy-secure.telia.is/api/flights', {
           params: {
             dateFrom: this.getToday(0),
             dateTo: this.getToday(1),
